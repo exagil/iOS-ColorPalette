@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSColorPalette" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BWz-XL-cMZ">
+                                <rect key="frame" x="4" y="0.0" width="406" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xwl-QI-eXl">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="368"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkB-he-0qt">
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="73.666666666666671"/>
+                                            </stackView>
+                                            <stackView contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-uJ-QoQ">
+                                                <rect key="frame" x="0.0" y="73.666666666666657" width="406" height="73.666666666666657"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-Qe-j8d">
+                                                        <rect key="frame" x="-2" y="0.0" width="410" height="74.666666666666671"/>
+                                                        <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="thumbTintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="onSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="3WD-os-Xb0"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="N0x-HJ-Duc">
+                                                <rect key="frame" x="0.0" y="147.33333333333334" width="406" height="73.333333333333314"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n3k-Y3-hIb">
+                                                        <rect key="frame" x="-2" y="0.0" width="410" height="74.333333333333314"/>
+                                                        <color key="thumbTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="onSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="Au3-f8-ifx"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-60-zl8">
+                                                <rect key="frame" x="0.0" y="220.66666666666669" width="406" height="73.666666666666686"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Fh-ML-RjR">
+                                                        <rect key="frame" x="-2" y="0.0" width="410" height="74.666666666666657"/>
+                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="thumbTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="onSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="eZW-oy-iWL"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE7-vk-gUX">
+                                                <rect key="frame" x="0.0" y="294.33333333333326" width="406" height="73.666666666666686"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.017952725570000001" green="0.035051714509999998" blue="0.067227564099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pr5-Xj-fpI">
+                                        <rect key="frame" x="0.0" y="368" width="406" height="368"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVR-tJ-Suo">
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="368"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.017952725570000001" green="0.035051714509999998" blue="0.067227564099999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BWz-XL-cMZ" secondAttribute="bottom" id="BQF-9f-EnF"/>
+                            <constraint firstItem="BWz-XL-cMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="QRH-kr-R2B"/>
+                            <constraint firstItem="BWz-XL-cMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="kVZ-nR-TQG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BWz-XL-cMZ" secondAttribute="trailing" constant="-16" id="srB-cb-ck1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderBlue" destination="n3k-Y3-hIb" id="eiE-xP-yDL"/>
+                        <outlet property="sliderGreen" destination="8Fh-ML-RjR" id="9pX-qY-vAa"/>
+                        <outlet property="sliderRed" destination="Te2-Qe-j8d" id="UrS-Qd-fIo"/>
+                        <outlet property="viewColor" destination="PVR-tJ-Suo" id="Epf-OI-mQC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+</document>
